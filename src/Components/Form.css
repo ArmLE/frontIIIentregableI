@@ -2,4 +2,20 @@
     display: flex;
     flex-direction: column;
     width: max(40vw,200px);
+    background-color: #E4E4E4;
+    padding: 20px;
+    height: 180px;
+    justify-content: space-between;
+}
+.wrapper input{
+    padding: 8px;
+    border-radius: 10px;
+}
+.wrapper button{
+    padding: 8px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #0373C7;
+    color: white;
+    font-weight: bold;
 }
