@@ -6,14 +6,20 @@ const Form = () => {
   const [name, setName]=useState("");
   const [color, setColor]=useState("");
   const [flag, setFlag] = useState(null);
-  const colorRegex = new RegExp('^#(?:[0-9a-fA-F]{3}){1,2}$');
-
+  const colorRegex = /^#(?:[0-9a-fA-F]{6}){1}$/g;
+  
+  const nameCheck = () => {
+    return name.trim().length >= 3 ? true : false;
+  }
+  const colorCheck = () => {
+    return color.match(colorRegex) ? true : false;
+  }
   const checkField = () => { 
-    return name.length != 0 && color.length != 0 && colorRegex.test(color) ? true : false;
+    return nameCheck() && colorCheck();
   }
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFlag(checkField) ;
+    setFlag(checkField()) ;
   }
     
   return (

@@ -2,7 +2,10 @@ import React from 'react'
 import './Error.css'
 const Error = () => {
   return (
-    <span className='warnning'> Por favor chequea que la información sea correcta.</span>
+    <div className='warnning'>
+      <span > Por favor chequea que la información sea correcta.</span>
+    </div>
+    
   )
 }
 
