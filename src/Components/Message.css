@@ -1,0 +1,21 @@
+.success{
+    display: flex;
+    flex-direction: column;
+    width: max(40vw,200px);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    padding: 20px;
+    margin-top: 10px ;
+}
+.success span{
+    padding-bottom: 10px;
+}
+.success button{
+    background-color: #37BF21;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0;
+}
